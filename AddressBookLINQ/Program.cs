@@ -15,6 +15,10 @@ namespace AddressBookLINQ
             Console.WriteLine();
             Console.WriteLine("UC3 Insert Row into DataTable AddressBook");
             Management.InsertRowIntoTable_UC3();
+
+            Console.WriteLine();
+            Console.WriteLine("UC4 Edit Record By Name into DataTable AddressBook");
+            Management.EditContactsByName_UC4();
         }
     }
 }
