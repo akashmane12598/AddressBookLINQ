@@ -30,6 +30,23 @@ namespace AddressBookLINQ
 
         }
 
+        public static void InsertRowIntoTable_UC3()
+        {
+            DataRow dr = dataTable.NewRow();
+            dr[0] = "Kapil";
+            dr[1] = "Sharma";
+            dr[2] = "Punjab";
+            dr[3] = "Jalandhar";
+            dr[4] = "Pun";
+            dr[5] = 968450;
+            dr[6] = "854621";
+            dr[7] = "kapil@gmail.com";
+
+            dataTable.Rows.Add(dr);
+
+            DisplayDataTable();
+        }
+
         public static void DisplayDataTable()
         {
             var stringTable = from product in dataTable.AsEnumerable() select product;
